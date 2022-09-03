@@ -11,7 +11,7 @@ function newCountrySelection(event) {
   displayCountryInfo(event.target.value);
 }
 
-// fetch("https://restcountries.eu/rest/v2/all")
+// fetch("https://restcountries.com/v2/all")
 // .then(function(res){
 //   // console.log(res);
 //   return res.json();
@@ -24,7 +24,7 @@ function newCountrySelection(event) {
 //   console.log("Error:", err);
 // });
 
-fetch("https://restcountries.eu/rest/v2/all")
+fetch("https://restcountries.com/v2/all")
 .then(res => res.json())
 .then(data => initialize(data))
 .catch(err => console.log("Error:", err));
